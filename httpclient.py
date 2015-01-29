@@ -47,6 +47,7 @@ class HTTPClient(object):
             sys.exit()   
         s.connect((host,port))
         return s
+    
     def get_code(self, data):
         code = data.split(' ')
         return int(code[1])
